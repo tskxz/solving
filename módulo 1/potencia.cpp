@@ -11,7 +11,7 @@ int main(){
     std::cout << "Introduze a base: ";
     std::cin >> base;
 
-    std::cout << "Introduze o expoente";
+    std::cout << "Introduze o expoente: ";
     std::cin >> expoente;
 
     int potencia = pow(base, expoente);
