@@ -21,7 +21,7 @@ Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR
   - [Ficha Avaliação](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/Teste01.pdf)
   - [Resolução](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/sistema_compras_vendas.cpp)  
   
-## Sistema de Compras e Vendas
+Sistema de Compras e Vendas
 ```cpp
 #include <iostream>
 
@@ -127,7 +127,7 @@ int main(){
 
 			break;
 
-		}
+	}
 }
 ```
 ### Terceiro Modulo
