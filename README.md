@@ -11,7 +11,10 @@
 
 ### Primeiro Modulo
 Introdução á algoritmia e fluxogramas, problemas de algoritmia em C++
-<a href="/módulo%201/Ficha%20prática%2001.pdf" class="image fit"></a>
+
+ 1. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2001.pdf)
+ 2. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2002.pdf)
+ 3. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2003.pdf)
 
 ### Segundo Modulo
 Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE
