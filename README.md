@@ -1,4 +1,5 @@
 
+
 # Solving
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
@@ -132,6 +133,94 @@ int main(){
 ```
 ### Terceiro Modulo
 Funções void e funções com tipos de dados
+Algoritmos que possam ser implementadas nos próximos exercícios
+Descobrir números primos, encontrar divisores etc...
+
+#### Numeros Primos
+Exemplo de um exercício seguinte
+Escrever uma função em C++ que imprima os N primeiros números primos. O valor de N tem que ser maior que 10 e menor que 100. Qualquer valor fora deste intervalo deve imprimir o texto "Não é possivel realizar essa operação"
+```cpp
+void primo(int n){
+    if(n < 10 || n > 100){
+        std::cout << "Nao e possivel realizar essa operacao";
+    } else {
+        for(int i = 1; i<=n; i++){
+            int divisor = 2;
+            while(i % divisor != 0){
+                divisor++;
+            }
+            if(divisor == i){
+                std::cout << i << ", ";
+            }
+        }
+    }
+}
+```
+Verificar se é primo ou não
+```cpp
+	int num;
+    int c = 0;
+    
+    std::cout << "Introduze o numero: ";
+    std::cin >> num;
+
+    for(int i = 1; i<=num; i++){
+        if(num % i == 0){
+            c++;
+        }
+    }
+    if(c == 2){
+        std::cout << "É primo";
+    } else {
+        std::cout << "Nao é primo";
+    }
+```
+
+Verificar se é primo ou não utilizando um ciclo while
+```cpp
+int primo(int num){
+    int n;
+    for(int i = 1; i<=num; i++){
+        if(num % i == 0){
+            n++;
+        }
+    }
+    if(n == 2){
+        return 1;
+    } else {
+        return -1;
+    }
+}
+```
+Mostrar primeiros numeros primos ate 50
+```cpp
+for(int i = 1; i<=50; i++){
+        int divisor = 2;
+        while(i % divisor != 0){
+            divisor++;
+        }
+        if(divisor == i){
+            std::cout << i << std::endl;
+        }
+    }    
+```
+Imprimir 10 primeiros multiplos de 5
+```cpp
+for(int i = 1; i<=10; i++){
+        cout << i * 5;
+    }
+```
+
+Dado um número, indicar os divisores de um número
+```cpp
+int num;
+std::cin >> num;
+for(int i = 1; i<=num; i++){
+	if(num % i == 0){
+		std::cout << i << ", ";
+    }
+}
+```
 
 ### Quarto Modulo
 Arrays, Vetores, Vetores multidimensionais e Matrizes
