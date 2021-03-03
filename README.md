@@ -5,6 +5,7 @@
 
  - [Módulo 1](#primeiro-modulo)
  - [Módulo 2](#segundo-modulo)
+ 	- Descobrir números primos etc..(#numeros-primos)
  - [Módulo 3](#terceiro-modulo)
  - [Módulo 4](#quarto-modulo)
  
