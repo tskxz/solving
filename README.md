@@ -5,9 +5,13 @@
 
  - [Módulo 1](#primeiro-modulo)
  - [Módulo 2](#segundo-modulo)
- 	- Descobrir números primos etc..(#numeros-primos)
+ 	- Condições com IF ELSEIF ELSE 
+ 	- Descobrir números primos
+ 	- Indicar os divisores etc...
  - [Módulo 3](#terceiro-modulo)
+ 	- Ciclos FOR WHILE DO WHILE
  - [Módulo 4](#quarto-modulo)
+ 	- Arrays, vetores, matrizes multidimensionais
  
  
 
