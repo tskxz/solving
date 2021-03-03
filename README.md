@@ -155,3 +155,23 @@ int main(){
 	mostrar_vetor(vet, 15);
 }
 ```
+
+#### Matrizes
+
+Matrizes é literalmente um vetor e nesse vetor tem vetores por exemplo vamos criar uma matriz de 2x2.
+```cpp
+int matriz[2][2] = {
+	{1,2},
+	{3,4}
+};
+```
+
+Lendo uma matriz de 4x4
+```cpp
+int matriz[4][4];
+for(int linha = 0; linha < 4; linha++){
+	for(int coluna = 0; coluna < 4; coluna++){
+		cin >> matriz[linha][coluna];
+	}
+}
+```
