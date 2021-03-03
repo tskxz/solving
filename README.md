@@ -1,5 +1,6 @@
 
 
+
 # Solving
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
@@ -123,3 +124,34 @@ for(int i = 1; i<=num; i++){
 ### Quarto Modulo
 Arrays, Vetores, Vetores multidimensionais e Matrizes
 
+
+#### Vetores
+Para criar um simples vetor
+`int vet[15];`
+
+Preenchendo um vetor á medida que o utilizador vai introduzir valores
+```cpp
+for(int i = 0; i<n; i++){
+		
+	std::cout << "Introduze o valor da posicao " << i;
+	std::cin >> vet[i];
+
+}
+```
+
+Funções para mostrar vetores e usa las em main
+```cpp
+void mostrar_vetor(int vet[], int n){
+	for(int i = 0; i<n; i++){
+		std::cout << vet[i];
+	}
+}
+
+
+int main(){
+	
+	int vet[15];
+	preencher_vetor(vet, 15);
+	mostrar_vetor(vet, 15);
+}
+```
