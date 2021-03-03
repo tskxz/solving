@@ -10,7 +10,7 @@
  	- Descobrir números primos
  	- Indicar os divisores etc...
  - [Módulo 3](#terceiro-modulo)
- 	- Ciclos FOR WHILE DO WHILE
+ 	- Funções void e com tipo de dado
  - [Módulo 4](#quarto-modulo)
  	- Arrays, vetores, matrizes multidimensionais
  
