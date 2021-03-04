@@ -176,3 +176,6 @@ for(int linha = 0; linha < 4; linha++){
 	}
 }
 ```
+
+Bubble Sort
+![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)
