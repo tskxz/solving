@@ -7,6 +7,7 @@
  - [Módulo 1](#primeiro-modulo)
  - [Módulo 2](#segundo-modulo)
  	- Condições com IF ELSEIF ELSE 
+ 	- Ciclos FOR WHILE DO WHILE
  	- Descobrir números primos
  	- Indicar os divisores etc...
  - [Módulo 3](#terceiro-modulo)
