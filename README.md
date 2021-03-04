@@ -179,3 +179,17 @@ for(int linha = 0; linha < 4; linha++){
 
 #### Bubble Sort
 ![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)
+
+```cpp
+void bubbleSort(int vet[], int n){
+	for(int i = 0; i<n; i++){
+		for(int j = 0; j<n-i-1; j++){
+			if(vet[j] > vet[j+1]){
+				int temp = vet[j];
+				vet[j] = vet[j+1];
+				vet[j+1] = temp;
+			}
+		}
+	}
+}
+```
