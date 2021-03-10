@@ -44,9 +44,11 @@ int ganhar_coluna(int m[][3], int coluna){
 		}
 	}
 	if(j1==3){
+		cout << "Parabens 1";
 		return 1;
 	}
 	if(j2 == 3){
+		cout << "Parabens 2";
 		return 2;
 	}
 }
@@ -70,15 +72,79 @@ int ganhar_diagonal(int m[][3]){
 			if(m[i][j+1] == 1){
 				j1++;
 			}
+
 			if(m[i][j+1] == 2){
 				j2++;
 			}
 		}
 	}
 	if(j1 == 3){
+		cout << "Parabens 1";
 		return 1;
 	}
 	if(j2 == 3){
+		cout << "Parabens 2";
 		return 2;
 	}
+}
+
+int ganhou(int m[][3]){
+
+	if(ganhar_linhas(m)){
+		ganhar_linhas(m);
+	}
+
+	if(ganhar_colunas(m)){
+		ganhar_colunas(m);
+	}
+
+	if(ganhar_diagonal(m)){
+		ganhar_diagonal(m);
+	}
+	
+
+}
+
+int main(){
+	
+	int matriz[3][3];
+	int jogadas_1, jogadas_2;
+
+	do {
+		int jogada_linha;
+		int jogada_coluna;
+
+		int jogada_linha2;
+		int jogada_coluna2;
+
+
+		cin >> jogada_linha;
+		cin >> jogada_coluna;
+		if(jogada_linha > 2 || jogada_coluna > 2){
+			cin >> jogada_linha;
+			cin >> jogada_coluna;
+		}
+		jogadas_1++;
+
+		matriz[jogada_linha][jogada_coluna] = 1;
+
+		cin >> jogada_linha2;
+		cin >> jogada_coluna2;
+		if(jogada_linha2 > 2 || jogada_coluna2 > 2){
+			cin >> jogada_linha;
+			cin >> jogada_coluna;
+		}
+		jogadas_2++;
+
+
+		matriz[jogada_linha2][jogada_coluna2] = 2;
+
+		if(jogadas_1 == 1){
+			cout << "JOGADOR 1 GANHOU";
+		}
+		if(jogadas_2 == 1){
+			cout << "JOGADOR 2 GANHOU!"
+		}
+	} while(!ganhou);
+
 }
