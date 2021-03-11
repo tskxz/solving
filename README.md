@@ -193,3 +193,51 @@ void bubbleSort(int vet[], int n){
 	}
 }
 ```
+
+### Vetores string
+Para criar um vetor string   
+`char nome[] = {'t', 'a', 'n', 'j', 'i', 'l', '\0'};`  
+`char nome_1[] = "tanjil";`  
+
+#### Mostrar string
+
+Duas maneiras de mostrar o vetor string com while
+```cpp
+	int i = 0;
+	while(nome[i]){
+		cout << nome[i];
+		i++;
+	}
+
+
+	// Outra forma de mostrar a string
+	i = 0;
+	while(nome[i] != '\0'){
+		cout << nome[i++];
+	}
+
+	i = 0;
+```
+
+Mostrar com do while
+```cpp
+do {
+		cout << nome[i];
+	} while(nome[i++]);
+
+```
+
+#### Inverter vetor string
+```cpp
+void inverte(char nome[]){
+	// Obtendo o tamanho da string
+	int tam;
+	for(tam = 0; nome[tam]; tam++);
+	cout << "Tamanho: " << tam << endl;
+
+	for(int i = tam-1; i >= 0; i--){
+		cout << nome[i];
+	}
+}
+```
+
