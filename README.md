@@ -241,3 +241,13 @@ void inverte(char nome[]){
 }
 ```
 
+#### Mostrar o tamanho da string
+```cpp
+int main(){
+	char nome[50];
+	std::cout << "Digite um nome: ";
+	cin >> nome;
+	cout << "O nome armazenado é: " << nome << " que tem " << strlen(nome) << " caractere" << endl;
+	return 1; 
+}
+```
