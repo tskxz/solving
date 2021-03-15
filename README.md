@@ -270,11 +270,10 @@ main()
 
 ### Função de saber tamanho da string
 ```cpp
-int strlen(char *s) { int i;
-
-                      for(i=0,s[i]!=’\0’;i++) ;
-
-                      return i;
+int strlen(char *s) { 
+		int i;
+		for(i=0,s[i]!=’\0’;i++) ;
+		return i;
 
 }
 ```
