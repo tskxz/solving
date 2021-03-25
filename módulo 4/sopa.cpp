@@ -32,10 +32,11 @@ void adicionar_coluna(char m[][10], int coluna, char palavra[]){
 }
 
 // Pesquisas
-char palavras[][10] = {"Ola", "Mundo"};
-char matriz[10][10] = {};
+
 
 int pesquisa(char m[][10], char palavra[], int linha){
+	char palavras[][10] = {"Ola", "Mundo"};
+	char matriz[10][10] = {};
 	for(int coluna = 0; coluna<10-n_palavra(palavra)+1;coluna++){
 		if(m[linha][coluna] == palavra[0]){
 			int encontrou = 1;
@@ -55,34 +56,48 @@ int pesquisa(char m[][10], char palavra[], int linha){
 }
 
 // Imprimir matriz
-void imprimir_matriz(char matriz[][10]){
-	for(int i = 0; i < 10; i++){
-		cout << matriz[i] << " ";
-	}
+
+void imprimir_matriz(char m[][10]){
+    char letras[30][30] = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","y","z"};
+    for(int linha = 0; linha<10; linha++){
+        for(int coluna = 0; coluna<10;coluna++){
+            if(m[linha][coluna]){
+                cout << m[linha][coluna] << " ";
+            } else {
+                int x = rand() % 26;
+	            cout << letras[x] << " ";
+                
+            }
+        }
+        cout << endl;
+    }
 }
 
 
 int main(){
 	// Adicionar linha 
-	char palavras[][10] = {"teste", "ola", "mundo"};
-	char matriz[][10] = {};
+	
+	char palavras[][10] = {"teste", "ola", "mundo", "um", "dois", "tres"};
+	char matriz[10][10] = {};
+	
 	srand(time(0));
-	int p = rand() % 3;
+	int p = rand() % 6;
+	cout << "Palavra" << palavras[p] << endl;
 	adicionar_linha(matriz, rand() % 10, palavras[p]);
 
 	// Adicionar coluna
+	p = rand() % 6;
+	adicionar_coluna(matriz, rand() % 10, palavras[p]);
+    cout << "Palavra" << palavras[p] << endl;
 	
-	char palavras_col[][10] = {"um", "dois", "tres"};
-	int p_1 = rand() % 3;
-	adicionar_coluna(matriz, rand() % 10, palavras[p_1]);
 	
-	// Pesquisar em todas linhas
-	for(int i = 0; i < 10; i++){
-		pesquisa(matriz, palavras[0], i);
-	}
+	
+	
+	
+	
 	
 
-	imprimir_matriz(matriz);
+	imprimir_matriz(matriz); 
 }
 
 
