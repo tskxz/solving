@@ -73,6 +73,23 @@ void imprimir_matriz(char m[][10]){
     }
 }
 
+void imprimir_matriz_limpa(char m[][10], char palavra[]){
+
+    for(int linha = 0; linha<10;linha++){
+        for(int coluna = 0; coluna<10; coluna++){
+            if(m[linha][coluna] != palavra[0]){
+                if(m[linha][coluna]!=palavra[1]){
+                    m[linha][coluna] = '*';
+                    cout << m[linha][coluna] << " ";
+                }
+                
+            } else {
+                cout << palavra;
+            }
+        }
+        cout << endl;
+    }
+}
 
 int main(){
 	// Adicionar linha 
@@ -89,15 +106,9 @@ int main(){
 	p = rand() % 6;
 	adicionar_coluna(matriz, rand() % 10, palavras[p]);
     cout << "Palavra" << palavras[p] << endl;
-	
-	
-	
-	
-	
-	
-	
 
-	imprimir_matriz(matriz); 
+	imprimir_matriz(matriz);
+	imprimir_matriz_limpa(matriz, palavras[p]);
 }
 
 
