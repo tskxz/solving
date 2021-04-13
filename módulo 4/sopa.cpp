@@ -34,26 +34,26 @@ void adicionar_coluna(char m[][10], int coluna, char palavra[]){
 // Pesquisas
 
 
-int pesquisa(char m[][10], char palavra[], int linha){
-	char palavras[][10] = {"Ola", "Mundo"};
-	char matriz[10][10] = {};
-	for(int coluna = 0; coluna<10-n_palavra(palavra)+1;coluna++){
-		if(m[linha][coluna] == palavra[0]){
-			int encontrou = 1;
-			for(int i = 1; palavra[i]; i++){
-				if(m[linha][coluna+i]!=palavra[i]){
-					encontrou = 0;
-					break;
+	int pesquisa(char m[][10], char palavra[], int linha){
+		char palavras[][10] = {"Ola", "Mundo"};
+		char matriz[10][10] = {};
+		for(int coluna = 0; coluna<10-n_palavra(palavra)+1;coluna++){
+			if(m[linha][coluna] == palavra[0]){
+				int encontrou = 1;
+				for(int i = 1; palavra[i]; i++){
+					if(m[linha][coluna+i]!=palavra[i]){
+						encontrou = 0;
+						break;
+					}
+				}
+				if(encontrou){
+					return 1;
 				}
 			}
-			if(encontrou){
-				return 1;
-			}
-		}
 
+		}
+		return 0;
 	}
-	return 0;
-}
 
 // Imprimir matriz
 
@@ -79,7 +79,7 @@ void imprimir_matriz_limpa(char m[][10], char palavra[]){
         for(int coluna = 0; coluna<10; coluna++){
             if(m[linha][coluna] != palavra[0]){
                 if(m[linha][coluna]!=palavra[1]){
-                    m[linha][coluna] = '*';
+                    m[linha][coluna] = '.';
                     cout << m[linha][coluna] << " ";
                 }
                 
@@ -94,21 +94,25 @@ void imprimir_matriz_limpa(char m[][10], char palavra[]){
 int main(){
 	// Adicionar linha 
 	
-	char palavras[][10] = {"teste", "ola", "mundo", "um", "dois", "tres"};
+	char palavras[][10] = {"ola", "mundo", "um", "dois", "tres"};
 	char matriz[10][10] = {};
 	
 	srand(time(0));
-	int p = rand() % 6;
+	int p = rand() % 5;
 	cout << "Palavra" << palavras[p] << endl;
 	adicionar_linha(matriz, rand() % 10, palavras[p]);
-
+    
+    imprimir_matriz(matriz);
+	imprimir_matriz_limpa(matriz, palavras[p]);
+	cout << "-------------------------------------------------" << endl;
 	// Adicionar coluna
-	p = rand() % 6;
+	p = rand() % 5;
 	adicionar_coluna(matriz, rand() % 10, palavras[p]);
     cout << "Palavra" << palavras[p] << endl;
+    imprimir_matriz(matriz);
+    
 
-	imprimir_matriz(matriz);
-	imprimir_matriz_limpa(matriz, palavras[p]);
+	
 }
 
 
