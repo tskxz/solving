@@ -277,3 +277,8 @@ int strlen(char *s) {
 
 }
 ```
+
+### Módulo 17 - Tratamento de Erros
+
+Erros são falhas ou comportamentos anormais durante o nosso programa.  
+Existem três tipos de erros em programação. Os erros de sintática, erros de lógica e de tempo de execução (runtime)  

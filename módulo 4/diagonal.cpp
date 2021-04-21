@@ -26,6 +26,14 @@ void imprimir_dig_princ(int matriz[][10], int linha){
     }
     cout << endl;
 }
+
+void imprimir_dig_princ_c(int matriz[][10], int coluna){
+    for(int i = coluna; i < 10; i++){
+        // cout << matriz[coluna][i] << " ";
+    }
+    cout << endl;
+}
+
 int main(){
     int matriz[10][10] = {
         {10,1,2,3,4,5,6,7,8,9},
@@ -47,4 +55,9 @@ int main(){
     cout << "-----------------" << endl;
 
     imprimir_dig_princ(matriz, 0);
+    cout << "-----------------" << endl;
+    // imprimir_dig_princ_c(matriz, 0);
+
+    cout << "FIM" << endl;
+    return 0;
 }
