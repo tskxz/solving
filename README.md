@@ -14,6 +14,8 @@
  	- Funções void e com tipo de dado
  - [Módulo 4](#quarto-modulo)
  	- Arrays, vetores, matrizes multidimensionais
+ - [Módulo 17](#tratamento-de-erros)
+	- Tratamento de erros
  
  
 
@@ -278,7 +280,8 @@ int strlen(char *s) {
 }
 ```
 
-### Modulo 17 - Tratamento de Erros
+### Modulo 17
+### Tratamento de Erros
 
 Erros são falhas ou comportamentos anormais durante o nosso programa.  
 Existem três tipos de erros em programação. Os erros de sintática, erros de lógica e de tempo de execução (runtime)  
