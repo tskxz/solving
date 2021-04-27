@@ -1,4 +1,8 @@
 #include <iostream>
+#include <string.h>
+#include <string>
+#include <typeinfo>
+
 using namespace std;
 
 double adicao(double a, double b){
@@ -14,11 +18,11 @@ double multi(double a, double b){
 }
 
 double division(double a, double b){
-    if(b == 0){
-        cout << "Impossible" << endl;
-        return -1;
-    } else {
+    if(b != 0){
         return a / b;
+    } else {
+        cout << "Math Error!" << endl;
+        return -1;
     }
 }
 
@@ -26,18 +30,18 @@ void calculadora(double a, char operador, double b){
     switch (operador)
     {
     case '+':
-        cout << adicao(a, b);
+        cout << "O resultado: " << adicao(a, b) << endl;
         break;
     case '-':
-        cout << subtract(a, b);
+        cout << "O resultado: " << subtract(a, b) << endl;
         break;
     case 'x':
     case '*':
-        cout << multi(a, b);
+        cout << "O resultado: " << multi(a, b) << endl;
         break;
     case '/':
     case ':':
-        cout << division(a, b);
+        cout << "O resultado: " << division(a, b) << endl;
         break;
 
     default:
@@ -47,13 +51,27 @@ void calculadora(double a, char operador, double b){
 }
 
 int main(){
+    
     double a;
     char op;
     double b;
 
-    cin >> a;
-    cin >> op;
-    cin >> b;
+    cout << "|| CALCULADORA ||" << endl;
+    cout << "Faca ctrl+c se quiser sair\n\n" << endl;
+    do {
+        cout << "Operacao: ";     
+        
+        cin >> a;
+        // cout << typeid(a).name() << endl;
+        cin >> op;
+        // cout << typeid(op).name() << endl;
+        cin >> b;
+        // cout << typeid(b).name() << endl;
+        // std::string descobrir = typeid(b).name();
+        // cout << typeid(descobrir).name() << endl;
 
-    calculadora(a, op, b);
+        calculadora(a, op, b);
+        
+        
+    } while (true);
 }
