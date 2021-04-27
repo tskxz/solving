@@ -7,15 +7,29 @@ using namespace std;
 
 // Funcao para inserir elementos para o vetor passado no parametro da funcao
 void inserir_elementos(int n_elementos, int vetor[]){
+    int n_elems;
     if(n_elementos <= 0){
-        cout << "Nao pode ser negativo!" << endl;
-        int n_elementos;
-        cout << "Introduze outra vez o numero de elementos: ";
-        cin >> n_elementos;
+        do {
+            cout << "Nao pode ser negativo!" << endl;
+
+            cout << "Introduze outra vez o numero de elementos: ";
+            cin >> n_elems;
+        } while(n_elems < 0);
+        cout << endl;
+       // cout << "!!SO PODE INSERIR NUMEROS!!" << endl;
+
+        for(int i = 0; i < n_elems; i++){
+        
+        cout << "Insire um elemento para o valor " << i << ": ";
+        cin >> vetor[i];
+        }
     }
+
     cout << endl;
+    //cout << "!!SO PODE INSERIR NUMEROS!!" << endl;
 
     for(int i = 0; i < n_elementos; i++){
+        
         cout << "Insire um elemento para o valor " << i << ": ";
         cin >> vetor[i];
     }
@@ -49,9 +63,9 @@ double maximo(double media1, double media2){
 int main(){
     int vetor1[10];
     int vetor2[10];
-    inserir_elementos(10, vetor1);
+    inserir_elementos(-1, vetor1);
     inserir_elementos(10, vetor2);
-
+    
     cout << endl;
     
     double media1 = media(10, vetor1);
