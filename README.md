@@ -62,39 +62,38 @@ void primo(int n){
 ```
 Verificar se é primo ou não
 ```cpp
-	int num;
-    	int c = 0;
-    
-    	std::cout << "Introduze o numero: ";
-    	std::cin >> num;
+int num;
+int c = 0;
+std::cout << "Introduze o numero: ";
+std::cin >> num;
 
-    	for(int i = 1; i<=num; i++){
-        	if(num % i == 0){
-            		c++;
-        	}
-    	}
-    	if(c == 2){
-        	std::cout << "É primo";
-    	} else {
-        	std::cout << "Nao é primo";
-    	}
+for(int i = 1; i<=num; i++){
+        if(num % i == 0){
+            	c++;
+        }
+}
+if(c == 2){
+        std::cout << "É primo";
+} else {
+        std::cout << "Nao é primo";
+}
 ```
 
 Verificar se é primo ou não utilizando um ciclo while
 ```cpp
-	int primo(int num){
-		int n;
-		for(int i = 1; i<=num; i++){
-			if(num % i == 0){
-			    n++;
-			}
-		}
-		if(n == 2){
-			return 1;
-		} else {
-			return -1;
+int primo(int num){
+	int n;
+	for(int i = 1; i<=num; i++){
+		if(num % i == 0){
+			n++;
 		}
 	}
+	if(n == 2){
+		return 1;
+	} else {
+		return -1;
+	}
+}
 ```
 Mostrar primeiros numeros primos ate 50
 ```cpp
@@ -276,10 +275,9 @@ main()
 ### Função de saber tamanho da string
 ```cpp
 int strlen(char *s) { 
-		int i;
-		for(i=0,s[i]!=’\0’;i++) ;
-		return i;
-
+	int i;
+	for(i=0,s[i]!=’\0’;i++) ;
+	return i;
 }
 ```
 
