@@ -2,6 +2,8 @@
 
 
 # Solving
+<img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
+
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
  - [Módulo 1](#primeiro-modulo)
