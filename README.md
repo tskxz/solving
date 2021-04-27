@@ -224,10 +224,9 @@ Duas maneiras de mostrar o vetor string com while
 
 Mostrar com do while
 ```cpp
-do 
-	{
+do {
 	cout << nome[i];
-	} while(nome[i++]);
+} while(nome[i++]);
 
 ```
 
