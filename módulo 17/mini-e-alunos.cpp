@@ -14,6 +14,8 @@ Para isso vai utilizar 3 estruturas de dados:
 */
 
 #include <iostream>
+#include <string>
+#include <string.h>
 using namespace std;
 void preencher_dados(char nome[][100], int idade[], float altura[]){
     for(int i = 0; i < 3; i++){
@@ -42,13 +44,34 @@ void mostrar_idades(int idade[]){
     }
 }
 
-void pesquisar_nome(string nome, char nome_v[][100]){
+int pesquisar_nome(string nome, char nome_v[][100]){
     for(int i = 0; i < 3; i++){
         if(nome_v[i] == nome){
-            cout << "Encontrou se na posicao: " << i << endl;
-            // return i;
+            // cout << "Encontrou se na posicao: " << i << endl;
+            return i;
         }
     }
+}
+
+void ordenar_idades(int idades[], char nome_v[][100], float altura[], int n){
+    char temp_c[100];
+    for(int i = 0; i<n; i++){
+		for(int j = 0; j<n-i-1; j++){
+			if(idades[j] > idades[j+1]){
+				int temp = idades[j];
+                strcpy(temp_c, nome_v[j]);
+                int temp_f = altura[j];
+
+				idades[j] = idades[j+1];
+                strcpy(nome_v[j], nome_v[j+1]);
+                altura[j] = altura[j+1];
+
+				idades[j+1] = temp;
+                strcpy(nome_v[j+1], temp_c);
+                altura[j+1] = temp_f;
+			}
+		}
+	}
 }
 
 void mostrar_nomes(char nome_v[][100]){
@@ -67,7 +90,12 @@ int main(){
     mostrar_dados(nome, idade, altura);
     mostrar_nomes(nome);
     pesquisar_nome("tanjil", nome);
-    
+    ordenar_idades(idade, nome, altura, 3);
+    cout << "------------------------" << endl;
+    cout << "Estrutura Ordenada por idades" << endl;
+    // mostrar_idades(idade);
     // preencher_idade(idade);
     // mostrar_idades(idade);
+
+    mostrar_dados(nome, idade, altura);
 }
