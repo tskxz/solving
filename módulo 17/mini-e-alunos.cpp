@@ -54,6 +54,9 @@ int pesquisar_nome(string nome, char nome_v[][100]){
 }
 
 void ordenar_idades(int idades[], char nome_v[][100], float altura[], int n){
+    if(n <= 0){
+        cout << "Nao pode ser negativo!";
+    }
     char temp_c[100];
     for(int i = 0; i<n; i++){
 		for(int j = 0; j<n-i-1; j++){
