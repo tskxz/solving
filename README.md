@@ -282,6 +282,16 @@ int strlen(char *s) {
 }
 ```
 
+### Função de pesquisar uma palavra que quer num vetor string
+```cpp
+void pesquisar_nome(string nome, char nome_v[][100]){
+	for(int i = 0; i < 3; i++){
+        if(nome_v[i] == nome){
+            cout << "Encontrou se na posicao: " << i << endl;
+        }
+    }
+}
+```
 ### Modulo 17
 ### Tratamento de Erros
 
