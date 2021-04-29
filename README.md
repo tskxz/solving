@@ -2,7 +2,7 @@
 <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
 
 # Solving
-
+![giff](https://media.tenor.com/images/dc545e5a0f93c9b2bf1d4f0af54ebbff/tenor.gif)
 
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
@@ -183,7 +183,7 @@ for(int linha = 0; linha < 4; linha++){
 ```
 
 #### Bubble Sort
-![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)
+![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)  
 
 ```cpp
 void bubbleSort(int vet[], int n){
