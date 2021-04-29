@@ -12,10 +12,11 @@ Para isso vai utilizar 3 estruturas de dados:
 4. Criar a função ordenar_idade que altera os dados das estruturas, colocando-as ordenadas de forma crescente pelas idades
 
 */
+
 #include <iostream>
 using namespace std;
 void preencher_dados(char nome[][100], int idade[], float altura[]){
-    for(int i = 0; i < 10; i++){
+    for(int i = 0; i < 3; i++){
         cout << "Nome do aluno: ";
         cin >> nome[i];
         cout << "Idade do aluno: ";
@@ -25,35 +26,48 @@ void preencher_dados(char nome[][100], int idade[], float altura[]){
     }
 }
 void mostrar_dados(char nome[][100], int idade[], float altura[]){
-    for(int i = 0; i < 10; i++){
+    for(int i = 0; i < 3; i++){
         cout << nome[i] << " " << idade[i] << " " << altura[i]  << endl;
     }
 }
 void preencher_idade(int idade[]){
-    for(int i = 0; i < 20; i++){
+    for(int i = 0; i < 3; i++){
         cout << "Idade do aluno: ";
         cin >> idade[i];
     }
 }
 void mostrar_idades(int idade[]){
-    for(int i = 0; i < 20; i++){
+    for(int i = 0; i < 3; i++){
         cout << idade[i] << endl;
     }
 }
 
-int pesquisar_nome(char nome[], char nome_v[][100]){
-    for(int i = 0; i < 20; i++){
+void pesquisar_nome(string nome, char nome_v[][100]){
+    for(int i = 0; i < 3; i++){
         if(nome_v[i] == nome){
-            cout << "Indice: " << i << endl;
+            cout << "Encontrou se na posicao: " << i << endl;
+            // return i;
         }
+    }
+}
+
+void mostrar_nomes(char nome_v[][100]){
+    for(int i = 0; i < 3; i++){
+        cout << nome_v[i] << endl;
     }
 }
 int main(){
     char nome[20][100];
     int idade[20];
     float altura[20];
+    cout << "------------------------" << endl;
+    cout << "ESTRUTURA DE ALUNOS" << endl;
+    
     preencher_dados(nome, idade, altura);
     mostrar_dados(nome, idade, altura);
+    mostrar_nomes(nome);
+    pesquisar_nome("tanjil", nome);
+    
     // preencher_idade(idade);
     // mostrar_idades(idade);
 }
