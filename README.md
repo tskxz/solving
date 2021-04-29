@@ -7,6 +7,8 @@
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
  - [Módulo 1](#primeiro-modulo)
+	- Algoritmia
+	- Introdução de programação
  - [Módulo 2](#segundo-modulo)
  	- Condições com IF ELSEIF ELSE 
  	- Ciclos FOR WHILE DO WHILE
