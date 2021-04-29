@@ -2,7 +2,7 @@
 <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
 
 # Solving
-![giff](https://media.tenor.com/images/dc545e5a0f93c9b2bf1d4f0af54ebbff/tenor.gif)
+![giff](https://files.readme.io/8c11911-senior-front-end-developer-openings-1.gif)
 
 ## Resolução de vários exercícios e algoritmos em linguagem C/C++
 
