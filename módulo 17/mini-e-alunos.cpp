@@ -17,8 +17,8 @@ Para isso vai utilizar 3 estruturas de dados:
 #include <string>
 #include <string.h>
 using namespace std;
-void preencher_dados(char nome[][100], int idade[], float altura[]){
-    for(int i = 0; i < 3; i++){
+void preencher_dados(char nome[][100], int idade[], float altura[], int n_elementos){
+    for(int i = 0; i < n_elementos; i++){
         cout << "Nome do aluno: ";
         cin >> nome[i];
         cout << "Idade do aluno: ";
@@ -27,8 +27,8 @@ void preencher_dados(char nome[][100], int idade[], float altura[]){
         cin >> altura[i];
     }
 }
-void mostrar_dados(char nome[][100], int idade[], float altura[]){
-    for(int i = 0; i < 3; i++){
+void mostrar_dados(char nome[][100], int idade[], float altura[], int tam){
+    for(int i = 0; i < tam; i++){
         cout << nome[i] << " " << idade[i] << " " << altura[i]  << endl;
     }
 }
@@ -44,8 +44,8 @@ void mostrar_idades(int idade[]){
     }
 }
 
-int pesquisar_nome(string nome, char nome_v[][100]){
-    for(int i = 0; i < 3; i++){
+int pesquisar_nome(string nome, char nome_v[][100], int tam){
+    for(int i = 0; i < tam; i++){
         if(nome_v[i] == nome){
             // cout << "Encontrou se na posicao: " << i << endl;
             return i;
@@ -89,9 +89,9 @@ int main(){
     cout << "------------------------" << endl;
     cout << "ESTRUTURA DE ALUNOS" << endl;
     
-    preencher_dados(nome, idade, altura);
-    mostrar_dados(nome, idade, altura);
-    mostrar_nomes(nome);
+    preencher_dados(nome, idade, altura, 20);
+    mostrar_dados(nome, idade, altura, 20);
+    // mostrar_nomes(nome);
     pesquisar_nome("tanjil", nome);
     ordenar_idades(idade, nome, altura, 3);
     cout << "------------------------" << endl;
