@@ -70,14 +70,14 @@ std::cout << "Introduze o numero: ";
 std::cin >> num;
 
 for(int i = 1; i<=num; i++){
-        if(num % i == 0){
-            	c++;
-        }
+	if(num % i == 0){
+	c++;
+	}
 }
 if(c == 2){
-        std::cout << "É primo";
+	std::cout << "É primo";
 } else {
-        std::cout << "Nao é primo";
+	std::cout << "Nao é primo";
 }
 ```
 
@@ -100,14 +100,14 @@ int primo(int num){
 Mostrar primeiros numeros primos ate 50
 ```cpp
 for(int i = 1; i<=50; i++){
-        int divisor = 2;
-        while(i % divisor != 0){
-            divisor++;
-        }
-        if(divisor == i){
-            std::cout << i << std::endl;
-        }
-    }    
+	int divisor = 2;
+	while(i % divisor != 0){
+		divisor++;
+	}
+	if(divisor == i){
+		std::cout << i << std::endl;
+	}
+}    
 ```
 Imprimir 10 primeiros multiplos de 5
 ```cpp
@@ -199,6 +199,16 @@ void bubbleSort(int vet[], int n){
 }
 ```
 
+### Função swap
+```cpp
+void swap(int &a, int &b){
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+```
+
 ### Vetores string
 Para criar um vetor string   
 `char nome[] = {'t', 'a', 'n', 'j', 'i', 'l', '\0'};`  
@@ -208,20 +218,20 @@ Para criar um vetor string
 
 Duas maneiras de mostrar o vetor string com while
 ```cpp
-	int i = 0;
-	while(nome[i]){
-		cout << nome[i];
-		i++;
-	}
+int i = 0;
+while(nome[i]){
+	cout << nome[i];
+	i++;
+}
 
 
-	// Outra forma de mostrar a string
-	i = 0;
-	while(nome[i] != '\0'){
-		cout << nome[i++];
-	}
+// Outra forma de mostrar a string
+i = 0;
+while(nome[i] != '\0'){
+	cout << nome[i++];
+}
 
-	i = 0;
+i = 0;
 ```
 
 Mostrar com do while
