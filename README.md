@@ -282,6 +282,8 @@ int comparar(char s1[], char s2[]){
 		}
 	}
 }
+```
+
 ### Função de saber tamanho da string
 ```cpp
 int strlen(char *s) { 
