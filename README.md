@@ -303,6 +303,16 @@ void pesquisar_nome(string nome, char nome_v[][100]){
     }
 }
 ```
+
+### Função de copiar as palavras de um vetor
+```cpp
+void copiar(char destino[], char origem[]){
+	for(int i = 0; origem[i]!='\0'; i++){
+		destino[i] = origem[i];
+	}
+}
+```
+
 ### Modulo 17
 ### Tratamento de Erros
 
