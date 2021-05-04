@@ -273,6 +273,15 @@ main()
 }
 ```
 
+### Função de comparar vetores de palavras
+```
+int comparar(char s1[], char s2[]){
+	for(int i = 0; s1[i]!='\0'; i++)[{
+		if(s1[i]!=s2[i]) {
+			return 1;
+		}
+	}
+}
 ### Função de saber tamanho da string
 ```cpp
 int strlen(char *s) { 
