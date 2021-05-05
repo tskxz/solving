@@ -82,11 +82,50 @@ void ordenar_idades(int idades[], char nome_v[][100], float altura[], int n){
 	}
 }
 
+int comparar(const char s1[], const char s2[]){
+    for(int i = 0; s1[i] || s2[i]; i++){
+        if(s1[i] > s2[i]){
+            return 1;
+        }
+        if(s2[i] > s1[i]){
+            return -1;
+        }
+        return 0;
+    }
+}
+
+void ordenar_nomes(int idades[], char nome_v[][100], float altura[], int n){
+    if(n <= 0){
+        cout << "Nao pode ser negativo!";
+    }
+    char temp_c[100];
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n-i-1; j++){
+            if(comparar(nome_v[j], nome_v[j+1]) == 1){
+                int temp = idades[j];
+                strcpy(temp_c, nome_v[j]);
+                int temp_f = altura[j];
+
+                idades[j] = idades[j+1];
+                strcpy(nome_v[j], nome_v[j+1]);
+                altura[j] = altura[j+1];
+
+                idades[j+1] = temp;
+                strcpy(nome_v[j+1], temp_c);
+                altura[j+1] = temp_f;
+            }
+        }
+    }
+}
+
+
 void mostrar_nomes(char nome_v[][100], int n){
     for(int i = 0; i < n; i++){
         cout << nome_v[i] << endl;
     }
 }
+
+
 
 int main(){
 
@@ -98,10 +137,15 @@ int main(){
     
     preencher_dados(nome, idade, altura, 3);
     mostrar_dados(nome, idade, altura, 3);
-    ordenar_idades(idade, nome, altura, 3);
+    //ordenar_idades(idade, nome, altura, 3);
     
-    cout << "------------------------" << endl;
+    //cout << "------------------------" << endl;
+    //cout << "Estrutura Ordenada por idades" << endl;
+    
+    
+    //cout << comparar("ANA", "ana") << endl;
     cout << "Estrutura Ordenada por idades" << endl;
-    
-    mostrar_dados(nome, idade, altura);
+    cout << "------------------------" << endl;
+    ordenar_nomes(idade, nome, altura, 3);
+    mostrar_dados(nome, idade, altura, 3);
 }
