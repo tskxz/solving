@@ -4,7 +4,7 @@
 # Solving
 ![giff](https://files.readme.io/8c11911-senior-front-end-developer-openings-1.gif)
 
-## Resolução de vários exercícios e algoritmos em linguagem C/C++
+## Compreensão e Resolução de vários exercícios e algoritmos em linguagem C/C++
 
  - [Módulo 1](#primeiro-modulo)
 	- Algoritmia
@@ -12,12 +12,15 @@
  - [Módulo 2](#segundo-modulo)
  	- Condições com IF ELSEIF ELSE 
  	- Ciclos FOR WHILE DO WHILE
- 	- Descobrir números primos
- 	- Indicar os divisores etc...
+ 	- [Prática de Exercícios](#pratica-de-exercicios)
  - [Módulo 3](#terceiro-modulo)
- 	- Funções void e com tipo de dado
+ 	- Introdução ás funções
+ 	- [Números Primos](#numeros-primos)
  - [Módulo 4](#quarto-modulo)
- 	- Arrays, vetores, matrizes multidimensionais
+ 	- [Vetores](#vetores)
+ 	- [Matrizes](#matrizes)
+ 	- [Vetor Strings](#vetores-string)
+ 	- [Algoritmo de Ordenação Bubble Sort](#bubble-sort)
  - [Módulo 17](#tratamento-de-erros)
 	- Tratamento de erros
  
@@ -32,19 +35,75 @@ Introdução á algoritmia e fluxogramas, problemas de algoritmia em C++
 
 ### Segundo Modulo
 Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE
+Exemplo de um código para verificar se uma pessoa pode beber alcool ou não
+```cpp
+int main(){
+	int idade;
+	cin >> idade;
+	if(idade > 18){
+		cout << "Permitido beber alcool!";
+	} else {
+		cout << "Nao pode beber alcool!"
+	}
+}
+```
+
+Exemplo de um ciclo for
+```cpp
+int main(){
+	for(int i = 0; i < 10; i++){
+		cout << i << ", ";
+	}
+}
+```
+
+O resultado vai ser `0, 1, 2, 3, 4, 5, 6, 7, 8, 9`
+
+#### Pratica de exercicios
   - [Ficha Avaliação](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/Teste01.pdf)
   - [Resolução](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/sistema_compras_vendas.cpp)  
-  
-Sistema de Compras e Vendas
 
 ### Terceiro Modulo
-Funções void e funções com tipos de dados
-Algoritmos que possam ser implementadas nos próximos exercícios
-Descobrir números primos, encontrar divisores etc...
+As funções podem devolver algum valor que chama-se valor de retorno. As funções podem ter parâmetros se for necessário.
+Exemplo de uma função que imprime uma soma de numeros
+
+```cpp
+int somar(int n1, int n2){
+	return n1+n2;
+}
+```
+Na função main, podemos chamar a função somar e passar os números que quiser como parametro
+
+```cpp
+int main(){
+	int primeiro;
+	int segundo;
+
+	cin >> primeiro;
+	cin >> segundo;
+
+	cout << somar(primeiro, segundo) << endl;
+}
+```
+
+Funções de tipo Void são funções que não irão ter nenhum retorno.
+Exemplo de uma função void
+
+```cpp
+void imprimirInfo(int idade, float peso){
+	cin >> idade;
+	cin >> float;
+	cout << "Tens " << idade << " anos e tens " << peso << " kg" << end; 
+}
+```
 
 #### Numeros Primos
-Exemplo de um exercício seguinte
-Escrever uma função em C++ que imprima os N primeiros números primos. O valor de N tem que ser maior que 10 e menor que 100. Qualquer valor fora deste intervalo deve imprimir o texto "Não é possivel realizar essa operação"
+
+Exemplo de um exercício com funções
+
+Escrever uma função em C++ que imprima os N primeiros números primos. O valor de N tem que ser maior que 10 e menor que 100. Qualquer valor fora deste intervalo deve imprimir o texto 
+"Não é possivel realizar essa operação"
+
 ```cpp
 void primo(int n){
     if(n < 10 || n > 100){
@@ -63,6 +122,7 @@ void primo(int n){
 }
 ```
 Verificar se é primo ou não
+
 ```cpp
 int num;
 int c = 0;
@@ -145,7 +205,7 @@ for(int i = 0; i<n; i++){
 }
 ```
 
-Funções para mostrar vetores e usa las em main
+Funções para mostrar vetores e usa-las em main
 ```cpp
 void mostrar_vetor(int vet[], int n){
 	for(int i = 0; i<n; i++){
@@ -162,9 +222,27 @@ int main(){
 }
 ```
 
+#### Bubble Sort
+Bubble Sort é um algoritmo que irá ordenar percorrendo o vetor várias vezes e cada passagem irá fazer flutuar para o topo o maior elemento da sequência.
+![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)  
+
+```cpp
+void bubbleSort(int vet[], int n){
+	for(int i = 0; i<n; i++){
+		for(int j = 0; j<n-i-1; j++){
+			if(vet[j] > vet[j+1]){
+				int temp = vet[j];
+				vet[j] = vet[j+1];
+				vet[j+1] = temp;
+			}
+		}
+	}
+}
+```
+
 #### Matrizes
 
-Matrizes é literalmente um vetor e nesse vetor tem vetores por exemplo vamos criar uma matriz de 2x2.
+Matrizes é literalmente um vetor com vetores por exemplo vamos criar uma matriz de 2x2.
 ```cpp
 int matriz[2][2] = {
 	{1,2},
@@ -182,24 +260,7 @@ for(int linha = 0; linha < 4; linha++){
 }
 ```
 
-#### Bubble Sort
-![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)  
-
-```cpp
-void bubbleSort(int vet[], int n){
-	for(int i = 0; i<n; i++){
-		for(int j = 0; j<n-i-1; j++){
-			if(vet[j] > vet[j+1]){
-				int temp = vet[j];
-				vet[j] = vet[j+1];
-				vet[j+1] = temp;
-			}
-		}
-	}
-}
-```
-
-### Função swap
+Função swap
 ```cpp
 void swap(int &a, int &b){
 	int temp;
@@ -209,12 +270,14 @@ void swap(int &a, int &b){
 }
 ```
 
-### Vetores string
+
+#### Vetores string
+
 Para criar um vetor string   
 `char nome[] = {'t', 'a', 'n', 'j', 'i', 'l', '\0'};`  
 `char nome_1[] = "tanjil";`  
 
-#### Mostrar string
+Mostrar string
 
 Duas maneiras de mostrar o vetor string com while
 ```cpp
@@ -242,7 +305,8 @@ do {
 
 ```
 
-#### Inverter vetor string
+Inverter vetor string
+
 ```cpp
 void inverte(char nome[]){
 	// Obtendo o tamanho da string
@@ -256,7 +320,8 @@ void inverte(char nome[]){
 }
 ```
 
-#### Mostrar o tamanho da string
+Mostrar o tamanho da string
+
 ```cpp
 int main(){
 	char nome[50];
@@ -266,9 +331,11 @@ int main(){
 	return 1; 
 }
 ```
-### Verificar se as strings sao iguais se não for, concatene
+
+Verificar se as strings sao iguais se não for, concatene
+
 ```cpp
-main()
+int main()
 {
 	char s1[20], s2[20];
 	printf("s1 = "); scanf("%s", s1);
@@ -283,10 +350,11 @@ main()
 }
 ```
 
-### Função de comparar vetores de palavras
+Função de comparar vetores de palavras
+
 ```cpp
 int comparar(char s1[], char s2[]){
-	for(int i = 0; s1[i]!='\0'; i++)[{
+	for(int i = 0; s1[i]!='\0'; i++){
 		if(s1[i]!=s2[i]) {
 			return 1;
 		}
@@ -294,16 +362,18 @@ int comparar(char s1[], char s2[]){
 }
 ```
 
-### Função de saber tamanho da string
+Função de saber tamanho da string
+
 ```cpp
 int strlen(char *s) { 
 	int i;
-	for(i=0,s[i]!=’\0’;i++) ;
+	for(i=0,s[i]!=’\0’;i++);
 	return i;
 }
 ```
 
-### Função de pesquisar uma palavra que quer num vetor string
+Função de pesquisar uma palavra que quer num vetor string
+
 ```cpp
 void pesquisar_nome(string nome, char nome_v[][100]){
 	for(int i = 0; i < 3; i++){
@@ -314,7 +384,7 @@ void pesquisar_nome(string nome, char nome_v[][100]){
 }
 ```
 
-### Função de copiar as palavras de um vetor
+Função swap só que em vetor char
 ```cpp
 void copiar(char destino[], char origem[]){
 	for(int i = 0; origem[i]!='\0'; i++){
@@ -324,7 +394,7 @@ void copiar(char destino[], char origem[]){
 ```
 
 ### Modulo 17
-### Tratamento de Erros
+#### Tratamento de Erros
 
 Erros são falhas ou comportamentos anormais durante o nosso programa.  
 Existem três tipos de erros em programação. Os erros de sintática, erros de lógica e de tempo de execução (runtime)  

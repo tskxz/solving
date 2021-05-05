@@ -89,22 +89,19 @@ void mostrar_nomes(char nome_v[][100], int n){
 }
 
 int main(){
+
     char nome[20][100];
     int idade[20];
     float altura[20];
     cout << "------------------------" << endl;
     cout << "ESTRUTURA DE ALUNOS" << endl;
     
-    preencher_dados(nome, idade, altura, 20);
-    mostrar_dados(nome, idade, altura, 20);
-    // mostrar_nomes(nome);
-    pesquisar_nome("tanjil", nome);
+    preencher_dados(nome, idade, altura, 3);
+    mostrar_dados(nome, idade, altura, 3);
     ordenar_idades(idade, nome, altura, 3);
+    
     cout << "------------------------" << endl;
     cout << "Estrutura Ordenada por idades" << endl;
-    // mostrar_idades(idade);
-    // preencher_idade(idade);
-    // mostrar_idades(idade);
-
+    
     mostrar_dados(nome, idade, altura);
 }
