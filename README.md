@@ -224,7 +224,7 @@ int main(){
 
 #### Bubble Sort
 Bubble Sort é um algoritmo que irá ordenar percorrendo o vetor várias vezes e cada passagem irá fazer flutuar para o topo o maior elemento da sequência.
-![gif](https://miro.medium.com/max/1992/1*Xf5HAp0lN-6qHsziRnjVxg.gif)  
+![gif](https://i.makeagif.com/media/6-19-2016/_22p6T.gif)  
 
 ```cpp
 void bubbleSort(int vet[], int n){
