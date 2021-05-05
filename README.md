@@ -12,7 +12,7 @@
  - [Módulo 2](#segundo-modulo)
  	- Condições com IF ELSEIF ELSE 
  	- Ciclos FOR WHILE DO WHILE
- 	- [Prática de Exercícios](#pratica-de-exercicios)
+ 	- Prática de Exercícios
  - [Módulo 3](#terceiro-modulo)
  	- Introdução ás funções
  	- [Números Primos](#numeros-primos)
