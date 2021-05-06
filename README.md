@@ -25,7 +25,7 @@
 	- Tratamento de erros
 
  - [Módulo 5](#estrutura-de-dados) 
- 	- Estruturas com Struct 
+ 	- Estrutura de dados 
  
  
 
@@ -404,7 +404,8 @@ Existem três tipos de erros em programação. Os erros de sintática, erros de 
 
 ### Modulo 5
 #### Estrutura de Dados
-Uma estrutura de dados permite criar variáveis com diferentes tipos de dados  
+Uma estrutura de dados permite criar variáveis com diferentes tipos de dados .
+É uma declaração de tipo de dados composta que define uma lista fisicamente agrupada de variáveis sob um nome em um bloco de memória
 Exemplo  
 
 ```cpp
