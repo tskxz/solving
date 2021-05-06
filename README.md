@@ -418,5 +418,5 @@ Aluno joaquim, ana;
 ```
 
 Um exemplo de um programa que tem funções imprimir e preencher a estrutura de tipo Aluno  
-	- [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
-	-  
+- [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
+- [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)
