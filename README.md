@@ -23,6 +23,9 @@
  	- [Algoritmo de Ordenação Bubble Sort](#bubble-sort)
  - [Módulo 17](#tratamento-de-erros)
 	- Tratamento de erros
+
+ - [Módulo 5](#estrutura-de-dados) 
+ 	- Estruturas com Struct 
  
  
 
@@ -398,3 +401,6 @@ void copiar(char destino[], char origem[]){
 
 Erros são falhas ou comportamentos anormais durante o nosso programa.  
 Existem três tipos de erros em programação. Os erros de sintática, erros de lógica e de tempo de execução (runtime)  
+
+### Modulo 5
+#### Estrutura de Dados
