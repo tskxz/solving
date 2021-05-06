@@ -406,6 +406,7 @@ Existem três tipos de erros em programação. Os erros de sintática, erros de 
 #### Estrutura de Dados
 Uma estrutura de dados permite criar variáveis com diferentes tipos de dados  
 Exemplo  
+
 ```cpp
 struct Aluno {
   int idade;
@@ -415,3 +416,6 @@ struct Aluno {
 Aluno tanjil;
 Aluno joaquim, ana;
 ```
+
+Um exemplo de um programa que tem funções imprimir e preencher a estrutura de tipo Aluno  
+	- [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
