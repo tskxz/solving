@@ -404,3 +404,14 @@ Existem três tipos de erros em programação. Os erros de sintática, erros de 
 
 ### Modulo 5
 #### Estrutura de Dados
+Uma estrutura de dados permite criar variáveis com diferentes tipos de dados  
+Exemplo  
+```cpp
+struct Aluno {
+  int idade;
+  double altura;
+} ;
+
+Aluno tanjil;
+Aluno joaquim, ana;
+```
