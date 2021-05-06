@@ -8,5 +8,5 @@ int main(){
 
     cout << c1 << '|' << c2 << endl;
     cout << (int) c1;
-    cout << (int)
+    
 }
