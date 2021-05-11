@@ -32,6 +32,8 @@
 ### Primeiro Modulo
 Introdução á algoritmia e fluxogramas, problemas de algoritmia em C++
 
+Tipos de Dados - Númericos, Alfa-Numéricos e Booleanos
+
  1. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2001.pdf)
  2. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2002.pdf)
  3. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2003.pdf)
