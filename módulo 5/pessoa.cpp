@@ -3,13 +3,13 @@
 
 using namespace std;
 
-void preencher(pessoa &p){
+void pessoa::preencher(){
     cout << "Nome: ";
-    cin >> p.nome;
+    cin >> nome;
     cout << "Idade: ";
-    cin >> p.idade;
+    cin >> idade;
 }
 
-void imprimir(pessoa &p){
-    cout << p.nome << " " << p.idade << endl;
+void pessoa::imprimir(){
+    cout << nome << " " << idade << endl;
 }

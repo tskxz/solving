@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     pessoa p1;
 
-    preencher(p1);
-    imprimir(p1);
+    p1.preencher();
+    p1.imprimir();
 
 }
