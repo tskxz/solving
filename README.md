@@ -40,7 +40,7 @@ Tipos de Dados - Númericos, Alfa-Numéricos e Booleanos
  3. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2003.pdf)
 
 ### Segundo Modulo
-Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE
+#### Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE  
 Exemplo de um algoritmia que imprime se a média for positiva  
 ![algoritmia](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/Sem%20T%C3%ADtulo.png)  
 Exemplo de um código para verificar se uma pessoa pode beber alcool ou não.
