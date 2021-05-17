@@ -422,5 +422,5 @@ Aluno joaquim, ana;
 
 Um exemplo de um programa que tem funções imprimir e preencher a estrutura de tipo Aluno  
 - [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
-- [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)
-é um método chamado assim que uma nova instância do objeto for criada. Tal método geralmente é responsável pela alocação de recursos necessários ao funcionamento do objeto além da definição inicial das variáveis de estado
+- [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)   
+Construtor é um método chamado assim que uma nova instância do objeto for criada. Tal método geralmente é responsável pela alocação de recursos necessários ao funcionamento do objeto além da definição inicial das variáveis de estado
