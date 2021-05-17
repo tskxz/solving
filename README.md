@@ -38,6 +38,7 @@ Tipos de Dados - Númericos, Alfa-Numéricos e Booleanos
  1. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2001.pdf)
  2. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2002.pdf)
  3. [Ficha Prática](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Ficha%20pra%CC%81tica%2003.pdf)
+ 4. [Ficha de Avaliação](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%201/Teste%2001.01.pdf)
 
 ### Segundo Modulo
 #### Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE  
