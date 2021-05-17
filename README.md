@@ -42,7 +42,7 @@ Tipos de Dados - Númericos, Alfa-Numéricos e Booleanos
 ### Segundo Modulo
 #### Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE  
 Exemplo de um IF em algoritmia  
-![if](https://raw.githubusercontent.com/tanjilk/solving/master/m%C3%B3dulo%202/if.png)
+![if](https://raw.githubusercontent.com/tanjilk/solving/master/m%C3%B3dulo%202/if.png)  
 Exemplo de um algoritmia que imprime se a média for positiva  
 ![algoritmia](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/Sem%20T%C3%ADtulo.png)  
 Exemplo de um código para verificar se uma pessoa pode beber alcool ou não.
