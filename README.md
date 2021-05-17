@@ -398,7 +398,7 @@ void copiar(char destino[], char origem[]){
 	}
 }
 ```
-
+ - [Ficha de avaliação](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%204/Teste.pdf)
 ### Modulo 17
 #### Tratamento de Erros
 
