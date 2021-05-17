@@ -8,8 +8,9 @@
 
  - [Módulo 1](#primeiro-modulo)
 	- Algoritmia
-	- Introdução de programação
  - [Módulo 2](#segundo-modulo)
+        - Introdução de programação
+        - Fluxogramas
  	- Condições com IF ELSEIF ELSE 
  	- Ciclos FOR WHILE DO WHILE
  	- Prática de Exercícios
@@ -40,7 +41,9 @@ Tipos de Dados - Númericos, Alfa-Numéricos e Booleanos
 
 ### Segundo Modulo
 Introdução em linguagem C/C++ com as condições IF  ELSE IF ELSE e ciclos FOR WHILE DO WHILE
-Exemplo de um código para verificar se uma pessoa pode beber alcool ou não
+Exemplo de um algoritmia que imprime se a média for positiva  
+![algoritmia](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%202/Sem%20T%C3%ADtulo.png)  
+Exemplo de um código para verificar se uma pessoa pode beber alcool ou não.
 ```cpp
 int main(){
 	int idade;
@@ -53,7 +56,7 @@ int main(){
 }
 ```
 
-Exemplo de um ciclo for
+Exemplo de um ciclo for em programação
 ```cpp
 int main(){
 	for(int i = 0; i < 10; i++){
