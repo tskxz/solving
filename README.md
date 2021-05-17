@@ -196,7 +196,8 @@ for(int i = 1; i<=num; i++){
 Arrays, Vetores, Vetores multidimensionais e Matrizes
 
 
-#### Vetores
+#### Vetores  
+Vetores é uma estrutura de dados onde pode armazenar um conjunto de dados do mesmo tipo e se refere a cada um deles por meio de um índice.
 Para criar um simples vetor
 `int vet[15];`
 
