@@ -29,10 +29,12 @@ void numero::copiar(numero origem){
 }
 
 void numero::add(numero n1, numero n2){
+    inteiro = n1.inteiro + n2.inteiro;
     real = n1.real + n2.real;
 }
 
 void numero::sub(numero n1, numero n2){
+    inteiro = n1.inteiro - n2.inteiro;
     real = n1.real - n2.real;
 }
 
