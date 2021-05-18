@@ -38,7 +38,7 @@ int posicao(char nome[], char letra){
 			return tam;
 		}
 	}
-	return -1
+	return -1;
 
 }
 int main(){
