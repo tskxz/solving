@@ -1,0 +1,9 @@
+1. Escreva um programa em C++ que peça um número ao utilizador e grave num ficheiro de texto o resultado da tabuada desse número.
+
+2. Escreva um programa em C++ que peça um número ao utilizador e que preencha um ficheiro de texto com todos os números pares entre 1 e esse número. De seguida deve imprimir o conteúdo desse ficheiro.
+
+3. Escreva um programa em C++ que leia o conteúdo de um ficheiro (que contém apenas números inteiros) e imprima apenas aqueles que são múltiplos de 3
+
+4. Escreve uma função em C++ que recebe como parâmetros o nome de um ficheiro e um número inteiro e que cria um ficheiro (com o nome enviado como parâmetro) e que armazena todos os números pares entre 10 e esse número. 
+
+5. Escreva uma função em C++ que recebe como parâmetros dois nomes de ficheiros, origem e destino. Esta função duplica o conteúdo de origem para destino. O ficheiro origem é constituído por números reais.
