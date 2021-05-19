@@ -483,3 +483,6 @@ int main(){
 	return 0;
 }
 ```
+#### Pratica de exercicios
+  - [Exercícios](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%207/exercicios-ficheiros/perguntas.txt)
+  - [Resolução](https://github.com/tanjilk/solving/tree/master/m%C3%B3dulo%207/exercicios-ficheiros)  
