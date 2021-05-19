@@ -27,6 +27,10 @@
 
  - [Módulo 5](#estrutura-de-dados) 
  	- Estrutura de dados 
+ - [Módulo 7](#gestao-de-ficheiros)
+ 	- Gestão de Ficheiros
+ 	- Manipulação de Ficheiros
+ 	- Biblioteca Fstream
  
  
 
@@ -430,10 +434,12 @@ Aluno joaquim, ana;
 
 Um exemplo de um programa que tem funções imprimir e preencher a estrutura de tipo Aluno  
 - [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
-- [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)   
+- [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)     
+  
 Construtor é um método chamado assim que uma nova instância do objeto for criada. Tal método geralmente é responsável pela alocação de recursos necessários ao funcionamento do objeto além da definição inicial das variáveis de estado
 
-
+### Modulo 7
+#### Gestao de Ficheiros
 - O tratamento de ficheiros em C++ é realizada com a ajuda da biblioteca fstream (File Stream);
 - A classe ofstream (Output File Stream) deve ser utilizada quando se pretende ESCREVER dados para um ficheiro. Para enviar dados para o ficheiro devemos utilizar o operador <<
 - A classe ifstream (Input File Stream) deve ser utilizada quando se pretende LER dados de um ficheiro. Para ler dados de um ficheiro devemos utilizar o operador >>
