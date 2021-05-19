@@ -432,3 +432,24 @@ Um exemplo de um programa que tem funções imprimir e preencher a estrutura de 
 - [Estrutura de dados Alunos](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%205/estrutura-alunos.cpp)
 - [Link util sobre estrutura de dados](https://www.inf.pucrs.br/~pinho/LaproI/Structs/Structs.htm)   
 Construtor é um método chamado assim que uma nova instância do objeto for criada. Tal método geralmente é responsável pela alocação de recursos necessários ao funcionamento do objeto além da definição inicial das variáveis de estado
+
+
+- O tratamento de ficheiros em C++ é realizada com a ajuda da biblioteca fstream (File Stream);
+- A classe ofstream (Output File Stream) deve ser utilizada quando se pretende ESCREVER dados para um ficheiro. Para enviar dados para o ficheiro devemos utilizar o operador <<
+- A classe ifstream (Input File Stream) deve ser utilizada quando se pretende LER dados de um ficheiro. Para ler dados de um ficheiro devemos utilizar o operador >>
+
+PASSOS PARA ESCREVER EM FICHEIROS DE TEXTO
+1. Declarar a biblioteca fstream
+2. Definir uma variável do tipo ofstream que será o descritor (representa um ficheiro).
+3. Abrir o ficheiro para escrita - ao utilizar uma variável do tipo ofstream só precisa de indicar qual o nome do ficheiro
+4. Enviar dados para o ficheiro utilizando o operador <<
+5. Fechar o ficheiro
+
+PASSOS PARA LER DE FICHEIROS DE TEXTO
+1. Declarar a biblioteca fstream
+2. Definir uma variável do tipo ifstream que será o descritor (representa um ficheiro).
+3. Abrir o ficheiro para leitura - ao utilizar uma variável do tipo ifstream só precisa de indicar qual o nome do ficheiro
+4. Verificar se o ficheiro existe
+5. Ler os dados do ficheiro utilizando o operador >>
+5.1 - A leitura é feita usando um ciclo while
+6. Fechar o ficheiro

@@ -25,6 +25,7 @@ void numero::imprimir(){
 
 void numero::copiar(numero origem){
     inteiro = origem.inteiro;
+    
     real = origem.real;
 }
 
