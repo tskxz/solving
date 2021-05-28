@@ -486,3 +486,46 @@ int main(){
 #### Pratica de exercicios
   - [Exercícios](https://github.com/tanjilk/solving/blob/master/m%C3%B3dulo%207/exercicios-ficheiros/perguntas.txt)
   - [Resolução](https://github.com/tanjilk/solving/tree/master/m%C3%B3dulo%207/exercicios-ficheiros)  
+
+#### Ficheiros Binários
+
+#### Como se armazenam os ficheiros binários?
+
+	- Codificados como uma sequência de bytes
+	- Acesso DIRETO - podemos ir para qualquer local do ficheiro
+	- É necessário conhecer a estrutura do ficheiro para aceder à informação
+
+Exemplo de escrita em um ficheiro em binário
+
+```cpp
+int num = 10;
+double fx = 34.54;
+
+ofstream outfile;
+
+outfile.open("teste.dat", ios::binary);
+outfile.write((const char *) (&num), sizeof(int));
+
+//outfile.write(&num, sizeof(num));
+
+outfile.write((const char *)(&fx), sizeof(double));
+//outfile.write(&fx, sizeof(fx));
+
+outfile.close();
+```
+
+Exemplo de um código em leitura de um ficheiro binário
+```cpp
+ifstream infile;​
+
+infile.open("teste.dat", ios::binary);​
+if (!infile) {
+    cerr << "Ocorreu um erro!" << endl;
+    exit(1);
+}
+infile.read((char *) (&num), sizeof(int));
+infile.read((char *)(&fx), sizeof(double));
+cout << num << endl;
+cout << fx << endl;
+infile.close();
+ ```
