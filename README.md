@@ -529,3 +529,5 @@ cout << num << endl;
 cout << fx << endl;
 infile.close();
  ```
+## Projeto final da estrutura da inscrição do curso profissional
+- [Resolução](https://github.com/tanjilk/estrutura-inscricao) 
