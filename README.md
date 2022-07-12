@@ -107,7 +107,7 @@ Exemplo de uma função void
 ```cpp
 void imprimirInfo(int idade, float peso){
 	cin >> idade;
-	cin >> float;
+	cin >> peso;
 	cout << "Tens " << idade << " anos e tens " << peso << " kg" << end; 
 }
 ```
